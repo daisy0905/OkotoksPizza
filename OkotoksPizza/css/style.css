@@ -1,0 +1,26 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 20%;
+    padding: 5px;
+}
+
+.cropped1 {
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover;
+    border: 5px solid black;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
