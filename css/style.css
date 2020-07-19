@@ -1,37 +1,45 @@
+/*
+Color Palette
+$prussian-blue: #003049ff;
+$maximum-red: #d62828ff;
+$orange: #f77f00ff;
+$maximum-yellow-red: #fcbf49ff;
+$lemon-meringue: #eae2b7ff;
+*/
+
 div h1 {
     display: block;
+    font-family: monospace;
     font-size: 3em;
-    margin-top: 0.67em;
-    margin-bottom: 0.67em;
+    font-weight: bold;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    color: #d62828ff;
+}
+
+section > article {
+    background-color: #eae2b7ff;
+    padding-left: 0;
+    padding-top: 15px;
+    padding-right: 0;
+    padding-bottom: 15px;
+}
+
+section > h1 {
+    display: block;
+    font-family: cursive;
+    font-size: 3em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;
     text-align: center;
-    color: darkred;
+    color:#d62828ff;
 }
-
-section > article {
-    background-color:orange;
-}
-
-h2 {
-    text-align: center;
-    display: block;
-    font-size: 2em;
-    font-weight: bold;
-}
-
-p {
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 3em;
-    margin-right: 3em;
-    line-height: 1;
-    font-size: 1.5em;
-    text-align: left;
-    color: black;
-  }
 
 h2 + p {
     text-align: center;
@@ -39,6 +47,27 @@ h2 + p {
     margin-bottom: 0.83em;
     margin-left: 0;
     margin-right: 0;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: cursive;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+p {
+    display: block;
+    font-size: 1.2em;
+    font-family: cursive;
+    text-align: left;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 3em;
+    margin-right: 3em;
+    line-height: 1;
+    color: black;
 }
 
 .branding {
@@ -51,21 +80,28 @@ span {
     font-size: 1.5em;
     text-align: center;
     font-weight: bold;
-    color:darkred;
+    color: #d62828ff;
 }
 
 footer {
     text-align: center;
     font-size: 1em;
-    padding: 3px;
-    background-color: DarkSalmon;
+    padding: 10px;
+    background-color: #003049ff;
     color: white;
-  }
+}
 
 img {
+    width: 10%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+table {
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 .row {
@@ -91,55 +127,102 @@ video {
 
 .navigation {
     text-align: center;
+    background-color: #fcbf49ff;
+    padding-left: 0;
+    padding-top: 15px;
+    padding-right: 0;
+    padding-bottom: 15px;
 }
 
-div#contact {
+#video {
+    text-align: center;
+}
+
+#review {
+    text-align: center;
+}
+
+#contact {
     text-align: center;
 }
 
 a {
-    font-size: 1.2em;
+    font-size: 1.5em;
+    font-family: monospace;
+    font-stretch: normal;
     text-decoration: none;
     text-align: center;
-    display: inline-block;
+    display: inner-block;
 }
 
 a.one:link {
-    color: black;
+    color: #003049ff;
+    padding: 5px;
+    border: 2px solid;
 }
 
 a.one:visited {
     color: black;
-    border: 2px solid darkorange;
+    border: 2px solid #eae2b7ff;
     padding: 5px;
 }
 
 a.one:hover {
     color:black;
-    border: 2px solid red;
+    border: 2px solid #d62828ff;
     padding: 5px;
 }
 
 a.one:active {
     color: grey;
-    border: 2px solid red;
+    border: 2px solid #d62828ff;
     padding: 5px;
 }
 
 .currentLink {
-    color: darkgrey;
-    border: 2px solid darkorange;
+    color:#d62828ff;
+    border: 2px solid #003049ff;
     padding: 5px; 
 }
 
-a.two:link {
+a.two:link, a.two:visited {
     color: white;
-    background-color: darkred;
+    background-color: #fcbf49ff;
     padding: 5px;
 }
 
-a.two:visited, a.two:hover, a.two:active {
+a.two:hover, a.two:active {
     color: white;
-    background-color: grey;
+    background-color: #d62828ff;
     padding: 5px;
+}
+
+.location {
+    text-align: center;
+}
+
+section#content {
+    background-color: #eae2b7ff;
+    padding-left: 0;
+    padding-top: 15px;
+    padding-right: 0;
+    padding-bottom: 15px;
+}
+
+div > img {
+    padding-left: 0px;
+    padding-top: 5px;
+    padding-right: 0;
+    padding-bottom: 5px;
+}
+
+div > p {
+    padding-left: 0px;
+    padding-top: 5px;
+    padding-right: 0;
+    padding-bottom: 5px;
+}
+
+img.chef {
+    width: 100%;
 }
