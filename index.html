@@ -14,78 +14,89 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-<br><br>
-<body>
+
+<body id="grid-container">
+    <!--Header starts-->
     <section id="header">
-        <div>
-            <img src="images/okotoks-pizza-logo.png" alt="Logo">
-        </div>
-        <br>
-        <div class="navigation">
+            <img class="logo" src="images/okotoks-pizza-logo.png" alt="Logo">
+            <span></span>
             <a class="currentLink" href="index.html">HOME</a>
-            <a class="one" href="pages/ourstory.html">OUR STORY</a>
+            <a class="one" href="pages/ourstory.html">ABOUT</a>
             <a class="one" href="pages/menu.html">MENU</a>
-            <a class="one" href="pages/catering.html">CATERING</a>
-            <a class="one" href="pages/contactus.html">CONTACT US</a>
-        </div>
+            <a class="one" href="pages/contactus.html">CONTACT</a>
     </section>
+    <!--Header ends-->
+
+    <!--Content starts-->
     <section id="content">
-        <article>
-            <div>
-                <h1>Enjoy your Okotoks Pizza!</h1>
+        <article id="main-title">
+            <h1>ENJOY YOUR OKOTOKS PIZZA!</h1>
+            <p>Everything at Okotoks Pizza is baked with love!</p>
+        </article>      
+        
+        <article id="top-content">
+            <div id="sub-title">
+                <h2>PERFECT TASTE, GREAT DEAL!</h2>
+                <p>There are no short cuts when it comes to our passion. We pull out all the stops, giving you the ‘wow’ flavour, experience and consistency you not only want, but deserve.</p>
+                <p>Our customers keep coming back, again, again, and again.</p>
             </div>
-            <div>
-                <table>
-                    <tr>
-                    <div class="row">
-                        <div class="column">
-                        <td><img class="cropped1" src="images/Pizza.jpg" alt="Pizza"></td>
-                        </div>
-                        <div class="column">   
-                        <td><img class="cropped1" src="images/PizzaChef.jpg" alt="Chef"></td>
-                        </div>
-                        <div class="column"> 
-                        <td><img class="cropped1" src="images/PizzaCooking.jpg" alt="Cooking Pizza" ></td>
-                        </div>
-                        <div class="column">
-                        <td><img class="cropped1" src="images/PizzaParty.jpg" alt="Family Pizza Party"></td>
-                        </div>
-                        <div class="column">
-                        <td><img class="cropped1" src="images/PizzaRestaurant.jpg" alt="Pizza Restaurant"></td>
-                        </div>
-                    </div>
-                    </tr>
-                </table>
+            <div id="images">
+                <span></span>
+                <img class="cropped-image" src="images/Pizza.jpg" alt="Pizza">
+                <img class="cropped-image" src="images/PizzaChef.jpg" alt="Chef">
+                <img class="cropped-image" src="images/PizzaRestaurant.jpg" alt="Pizza Restaurant">
+                <img class="cropped-image" src="images/PizzaParty.jpg" alt="an image shows catering offered">
+                <span></span>
             </div>
-            <div>
-                <p class="branding"><span>WOW</span></p>
-                <p class="branding">flavour, experience and consistency you not only want, but deserve!</p>
+        </article>
+
+        <article id="sub-content" class="sub-content"> 
+            <div id="review">
+                <h2>BEST DRESSED IN YOUR WORDS</h2>
+                <p> I've been hare many times now, tried many of the items on the menu, and have always enjoyed it tremendously.</p>
+                <p>-----Emily</p>
+                <p>They don't chintz out on the cheese and the crust is just right. They are usually understaffed but the staff there always do the best they can to give good service.</p>
+                <p>-----Daniel</p>
+                <a class="one" href="https://www.yelp.ca/biz/pizza-hut-calgary-2" target="_blank">YELP REVIEW</a>
             </div>
-            <div id="video"> 
-                <iframe width="560" height="315" 
+            <div id="video">
+                <iframe width="900" height="560"
                 src="https://www.youtube.com/embed/xbHbcmQIcAQ" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen>
                 </iframe>
             </div>
+            <span></span>
         </article>
-        <article>
-            <div id="review">
-                <a class="two" href="https://www.yelp.ca/biz/pizza-hut-calgary-2" target="_blank">Yelp Review for Comparable Business</a>
+        
+        <article id="order-info">
+            <div>
+                <a class="button" href="mailto:info@okotokspizza.ca">ORDER BY EMAIL!</a>
             </div>
             <div>
-                <h2>Contact Info</h2>
-                <p>Please contact us for your orders!</p>
+                <a class="button" href="tel:4035555555">ORDER BY PHONE!</a>
             </div>
-            <div id="contact">
-                <a class="two" href="mailto:info@okotokspizza.ca">Mail me!</a>
-                <a class="two" href="tel:4035555555">Phone me!</a>
+        </article>
+
+        <article id="contact-info">
+            <div class="info">
+                <h3>CONTACT</h3>
+                <p>420 Big Rock Ln<br>Okotoks, Alberta<br>T1S 1B4</p>
             </div>
-        </article>      
+            <div class="info">
+                <h3>OPEN HOURS</h3>
+                <p>Mon - Thurs : 12 PM - 11 PM<br>Fri - Sat: 12PM - 12 AM<br>Sun: 4 PM - 10 PM</p>
+            </div>
+        </article>
     </section>
+    <!--Content ends-->
+
+    <!--Footer starts-->
     <section id="footer">
         <footer>Copyright 2020</footer>
-    </section>  
+    </section>
+    <!--Footer ends-->
+
 </body>
 </html>
