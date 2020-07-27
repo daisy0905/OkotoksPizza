@@ -7,237 +7,277 @@ $windsor-tan: #99582aff;
 $banana-mania: #ffe6a7ff;
 */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center; 
+}
+
+#grid-container {
+    display: grid;
+}
+
 /*Header starts*/
-img {
-    max-width: 100%;
+#header {
+    width: 100%;
+    height: 15vh;
+    display: grid;
+    grid-template-columns: 20% auto 9% 9% 9% 9%;
+    column-gap: 1vw;
+    justify-items: center;
+    align-items: center; 
 }
 
 .logo {
-    width: 10%;
+    width: 5vw;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /*Navigation starts*/
-.main-nav ul {
-    display: grid;
-    grid-gap: 10px;
-    padding: 0;
-    list-style: none;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-
-.main-nav a {
-    display: inline-block;
-    font-size: 2rem;
-    font-family: monospace;
+#header a {
+    width: 100%;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    padding: 0.3rem;
-    margin: 1.6rem;
     font-stretch: normal;
     text-decoration: none;
     text-align: center;
     color: white;
+    padding: 0.3em 0.9em 0.3em 0.9em;
 }
 
-.main-nav a:link {
-    background-color: #003049ff;
+#header a:link, #header a:visited {
+    background-color: #bb9457;
 }
 
-.main-nav a:visited {
-    background-color: #bb9457ff;
+#header a:hover {
+    background-color:#99582aff;  
 }
 
-.main-nav a:hover {
-    background-color:#99582aff;
-}
-
-.main-nav a:active {
+#header a:active {
     background-color: grey;
 }
 
-.main-nav a.currentLink2 {
+#header a.currentLink {
     background-color:#6f1d1bff;
 }
 /*Navigation ends*/
-
-
-
-/*Banner starts*/
-#banner {
-    min-height: 450px;
-    background: url(../images/backgroundimage-pizza.jpg);
-    background-size: cover;
-    background-position: top;
-    padding-top: 0.3rem;
-    padding-bottom: 0.6rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#banner h1 {
-    display: block;
-    font-family: monospace;
-    font-size: 5em;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
-    color: white;
-}
-
-#banner p {
-    display: block;
-    font-size: 3em;
-    font-family: monospace;
-    text-align: center;
-    margin-top: 0.1em;
-    margin-bottom: 0.1em;
-    line-height: 0.8;
-    color: white;
-}
-
-#banner a {
-    display: block;
-    font-size: 2rem;
-    font-family: monospace;
-    font-weight: bold;
-    padding: 0.6rem;
-    margin: 1.6rem;
-    font-stretch: normal;
-    text-decoration: none;
-    text-align: center;
-    color: white;
-}
-
-#banner a:link {
-    background-color: #6f1d1bff;
-}
-
-#banner a:visited {
-    background-color: #bb9457ff;
-}
-
-#banner a:hover {
-    background-color:#99582aff;
-}
-
-#banner a:active {
-    background-color: grey;
-}
-
-#banner a.currentLink2 {
-    background-color:#6f1d1bff;
-}
-/*Banner ends*/
 /*Header ends*/
 
 /*Content starts*/
-/*Top-container starts*/
-#top-container {
-    background-color:#ffe6a7ff;
+#content {
+    width: 100%;
+    min-height: 77vh;
     display: grid;
-    grid-gap: 5px;
+    grid-row-gap: 2.5vh;
+    justify-items: center;
+    align-items: center;
+}
+
+#main-title {
+    width: 100%;
+    min-height: 40vh;
+    background: url(../images/backgroundimage-pizza-2.jpg);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+#main-title h1 {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding-left: 0.6em;
+}
+
+#main-title p {
+    display: block;
+    font-size: 2rem;
+    font-family: cursive;
+    text-align: center;
+    color: white;
+    margin-top: 0.5em;
+    padding-left: 0.9em;
+}
+
+#main-title a {
+    width: 30vw;
+    display: block;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-stretch: normal;
+    text-decoration: none;
+    text-align: center;
+    margin: 1em 2em 0 1em;
+}
+
+#main-title a:link, #main-tilte a:visited {
+    color: white;
+    background-color: #99582aff;
+    padding: 0.3em 0.6em 0.3em 0.6em;
+}
+    
+#main-title a:hover, #main-title a:active {
+    width: 35vw;
+    color: #99582aff;
+    background-color: white;
+    padding: 0.4em 0.7em 0.4em 0.7em;
+    font-size: 1.8rem;
+}
+
+/*Top-container starts*/
+#top-content {
+    width: 100%;
+    min-height: 60vh;
+    display: grid;
     grid-template-columns: 1fr 1.5fr;
-    padding: 3rem;
+    align-items: center;
+    justify-items: center;
 }
 
-.box-a {
-    padding-top: 0;
-    padding-right: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    margin: 0.3rem 0 0.3rem 0;
+.top-image img {
+    margin: 0.3em 0 0.3em 1.5em;
+    border-radius: 2em;
 }
 
-.box-a img {
-    width: 50vw;
-}
-
-.box-b {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    padding-top: 0;
-    padding-right: 0;
-    padding-bottom: 0;
-    padding-left: 0;
+.top-text {
     margin: 0.3rem 0 0.3rem 0.3rem;
 }
 
-.box-b h2 {
+.top-text h2 {
     display: block;
     font-size: 2em;
     text-align: center;
-    margin: 0.3rem auto 0.3rem auto;
+    margin: 0.3em auto 0.3em auto;
     font-weight: bold;
-    font-family: monospace;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6f1d1bff;
 }
 
-.box-b p {
+.top-text p {
     text-align: left;
-    font-size: 1.3em;
-    font-family: monospace;
-    margin: 0.3rem 1rem 0.3rem 1rem;
+    font-size: 1.1em;
+    font-family: cursive;
+    margin: 0.3em 1em 0.3em 1em;
     color: #99582aff;
 }
 /*Top-container ends*/
 
-/*Bottom-container starts*/
-#bottom-container {
-    background-color:#99582aff;
+/*Sub-content starts*/
+#sub-content {
+    width: 100%;
+    min-height: 50vh;
     display: grid;
-    grid-gap: 0;
-    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+    grid-template-columns: auto 30% 40%;
+    column-gap: 1vw;
+    justify-items: center;
+    align-items: center;
 }
 
-.box-c { 
+.sub-content {
+    background: url(../images/backgroundimage-pizza-2.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+#menu-order a {
+    width: 25vw;
+    display: block;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-stretch: normal;
+    text-decoration: none;
+    text-align: center;
+    margin: 0.3em 2em 0.6em 2em;
+}
+
+#menu-order a:link, #menu-order a:visited {
+    color: #bb9457ff;
+    border: 3px solid #bb9457ff;
+    padding: 0.2em;
+}
+    
+#menu-order a:hover, #menu-order a:active {
+    color: #99582aff;
+    border: 2px solid #99582aff;
+    padding: 0.2em;
+}
+
+#video iframe {
+    margin: 0.3em 1em 0.3em 0;
+}
+/*Sub-content ends*/
+
+/*Bottom-content starts*/
+#bottom-content {
+    width: 95%;
+    min-height: 100vh;
     display: grid;
+    column-gap: 1vw;
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+    grid-template-rows: 50% 50%;
+    row-gap: 1vh;
     justify-content: center;
     align-content: center;
-    padding-top: 0;
-    padding-right: 0;
-    padding-bottom: 0;
-    padding-left: 0;
 }
 
-.box-c img {
-    max-width: 100%;
-}
-
-.cropped3 {
-    width: 35vw;
-    height: 35vw;
+.cropped {
+    width: 100%;
+    height: 50vh;
     object-fit: cover;
 }
 
-.box-c h3{
+.bottom-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: top;
+}
+
+.bottom-text h3{
     display: block;
     font-size: 1.5em;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
-    font-family: monospace;
+    font-family: Arial, Helvetica, sans-serif;
     color: #6f1d1bff;
+    margin: 0.6em 0.6em 0.6em 0.6em;
 }
 
-.box-c p {
-    text-align: center;
-    font-size: 1.3em;
-    font-family: monospace;
-    margin: 0.3rem 1.5rem 0.3rem 1.5rem;
-    color: #6f1d1bff;
+.bottom-text p {
+    text-align: left;
+    font-size: 1em;
+    font-family: cursive;
+    color: #99582aff;
+    margin: 0.6em 0.6em 0.6em 0.6em;
 }
-/*bottom-container ends*/
 
 /*Footer starts*/
-footer {
-    text-align: center;
+#footer {
+    background-color: #6f1d1bff;
+    width: 100%;
+    height: 8vh;
     font-size: 1rem;
-    font-family: monospace;
-    background-color: #432818ff;
-    padding: 1rem 0 1rem 0;
+    font-family: cursive;
     color: white;
-}
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+} 
 /*Footer ends*/
