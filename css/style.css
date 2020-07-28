@@ -8,9 +8,9 @@ $banana-mania: #ffe6a7ff;
 */
 
 @keyframes sub-title-animation {
-    0% {font-size: 6rem; font-weight: normal;}
-    50% {font-size: 9rem; font-weight: bold;}
-    100% {font-size: 7rem; font-weight: normal;}
+    0% {font-size: 1.5rem; font-weight: normal;}
+    50% {font-size: 2rem; font-weight: bold;}
+    100% {font-size: 1.8rem; font-weight: normal;}
 }
 
 #sub-title h2:hover {
@@ -30,14 +30,6 @@ $banana-mania: #ffe6a7ff;
     width: 30vw;
 }
   
-.text h3 {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 4rem;
-    padding: 0.3rem 0 0.6rem;
-}
-  
-
 * {
     margin: 0;
     padding: 0;
@@ -74,8 +66,7 @@ body {
 /*Navigation starts*/
 #header a {
     width: 100%;
-    display: block;
-    font-size: 3.5rem;
+    font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-stretch: normal;
@@ -85,18 +76,12 @@ body {
     padding: 0.3em 0.9em 0.3em 0.9em;
 }
 
-#header a:link {
-    background-color: #003049ff;
-}
-
-#header a:visited {
-    background-color: #bb9457ff;
-    
+#header a:link, #header a:visited {
+    background-color: #bb9457;
 }
 
 #header a:hover {
-    background-color:#99582aff;
-    
+    background-color:#99582aff;  
 }
 
 #header a:active {
@@ -132,7 +117,7 @@ body {
 #main-title h1 {
     display: block;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 10rem;
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
     color: white;
@@ -140,7 +125,7 @@ body {
 
 #main-title p {
     display: block;
-    font-size: 6rem;
+    font-size: 1.5rem;
     font-family: cursive;
     text-align: center;
     color: white;
@@ -150,7 +135,7 @@ body {
 #main-title a {
     width: 30vw;
     display: block;
-    font-size: 5rem;
+    font-size: 1.6rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-stretch: normal;
@@ -170,7 +155,7 @@ body {
     color: #99582aff;
     background-color: white;
     padding: 0.4em 0.7em 0.4em 0.7em;
-    font-size: 6rem;
+    font-size: 2rem;
 }
 
 #top-content {
@@ -185,7 +170,7 @@ body {
 
 #sub-title h2 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 6rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
     margin: 0.6em 2em 0.3em 2em;
@@ -193,7 +178,7 @@ body {
 }
 
 #sub-title p {
-    font-size: 4rem;
+    font-size: 1.1rem;
     font-family: cursive;
     text-align: center;
     margin: 0.1em 10em 0.3em 10em;
@@ -226,9 +211,9 @@ body {
 }
 
 .sub-content {
-    background: url(../images/backgroundimage-pizza-2.jpg);
+    background: url(../images/backgroundimage-pizza-4.jpg);
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
     padding-top: 0.3rem;
     padding-bottom: 0.6rem;
     margin-top: 0.6em;
@@ -236,12 +221,12 @@ body {
 
 #video iframe {
     width:100%;
-    height: 44vh; 
+    height: 50vh; 
 }
 
 #review h2 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 4rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-align: left;
     margin: 0.5em 1em 0.1em 1.5em;
@@ -249,7 +234,7 @@ body {
 }
 
 #review p {
-    font-size: 3rem;
+    font-size: 0.8rem;
     font-family: cursive;
     text-align: left;
     margin: 0.3em 2em 0 2em;
@@ -264,7 +249,7 @@ body {
 #review a {
     width: 15vw;
     display: block;
-    font-size: 4rem;
+    font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-stretch: normal;
@@ -299,7 +284,7 @@ a.one:hover, a.one:active {
 
 a.button-1 {
     display: block;
-    font-size: 7rem;
+    font-size: 1.8rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-stretch: normal;
@@ -314,13 +299,13 @@ a.button-1:link, a.button-1:visited {
     
 a.button-1:hover, a.button-1:active {
     color:#6f1d1bff;
-    font-size: 8rem;
+    font-size: 2rem;
 }
 
 a.button-2 {
     width: 30vw;
     display: block;
-    font-size: 6rem;
+    font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-stretch: normal;
@@ -345,7 +330,7 @@ a.button-2:hover, a.button-2:active {
     background-color: #bb9457ff;
     padding: 0.3em;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 4rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: left;
     margin: 0.5em 1em 0.1em 1.5em;
@@ -353,7 +338,7 @@ a.button-2:hover, a.button-2:active {
 
 #contact-info {
     width: 100%;
-    min-height: 15vh;
+    min-height: 20vh;
     display: grid;
     column-gap: 1vw;
     grid-template-columns: 1fr 1fr;
@@ -365,14 +350,14 @@ a.button-2:hover, a.button-2:active {
 
 .info h3 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 4rem;
+    font-size: 1rem;
     font-weight: bold;
     text-align: center;
     color: white;
 }
 
 .info p {
-    font-size: 3rem;
+    font-size: 0.8rem;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     line-height: 1.5;
@@ -386,7 +371,7 @@ a.button-2:hover, a.button-2:active {
     background-color: #6f1d1bff;
     width: 100%;
     min-height: 8vh;
-    font-size: 3rem;
+    font-size: 1rem;
     font-family: cursive;
     color: white;
     text-align: center;

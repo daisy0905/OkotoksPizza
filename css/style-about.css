@@ -43,7 +43,7 @@ body {
 /*Navigation starts*/
 #header a {
     width: 100%;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-stretch: normal;
@@ -96,7 +96,7 @@ body {
 #main-title h1 {
     display: block;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
     color: white;
@@ -105,7 +105,7 @@ body {
 
 #main-title p {
     display: block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: cursive;
     text-align: center;
     color: white;
@@ -160,7 +160,7 @@ body {
 
 .top-text h2 {
     display: block;
-    font-size: 2em;
+    font-size: 1.5rem;
     text-align: center;
     margin: 0.3em auto 0.3em auto;
     font-weight: bold;
@@ -170,7 +170,7 @@ body {
 
 .top-text p {
     text-align: left;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     font-family: cursive;
     margin: 0.3em 1em 0.3em 1em;
     color: #99582aff;
@@ -189,9 +189,9 @@ body {
 }
 
 .sub-content {
-    background: url(../images/backgroundimage-pizza-2.jpg);
+    background: url(../images/backgroundimage-pizza-8.jpg);
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
 }
 
 #menu-order a {
@@ -207,13 +207,13 @@ body {
 }
 
 #menu-order a:link, #menu-order a:visited {
-    color: #bb9457ff;
+    color: white;
     border: 3px solid #bb9457ff;
     padding: 0.2em;
 }
     
 #menu-order a:hover, #menu-order a:active {
-    color: #99582aff;
+    color: #bb9457ff;
     border: 2px solid #99582aff;
     padding: 0.2em;
 }
@@ -249,9 +249,9 @@ body {
     justify-content: top;
 }
 
-.bottom-text h3{
+.bottom-text h2{
     display: block;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     text-align: left;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
@@ -261,7 +261,7 @@ body {
 
 .bottom-text p {
     text-align: left;
-    font-size: 1em;
+    font-size: 1rem;
     font-family: cursive;
     color: #99582aff;
     margin: 0.6em 0.6em 0.6em 0.6em;
