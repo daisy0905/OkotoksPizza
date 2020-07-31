@@ -1,0 +1,561 @@
+/*
+Color Palette
+$persian-plum: #6f1d1bff;
+$camel: #bb9457ff;
+$bistre: #432818ff;
+$windsor-tan: #99582aff;
+$banana-mania: #ffe6a7ff;
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Header starts*/
+#header {
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 15vw auto 35vw 0vw;
+    row-gap: 0.2vh;
+    justify-items: center;
+    align-items: center; 
+}
+
+.logo {
+    width: 95%;
+    display: block;
+}
+
+.dropbtn {
+    background-color: #bb9457ff;
+    color: white;
+    padding: 0.4em;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px grey;
+}
+
+.desktop-menu {
+    display: none;
+}
+
+.dropdown-content a {
+    display: block;
+    width: 100%;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-stretch: normal;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 0.4em;
+}
+
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-menu:hover .dropbtn {
+    background-color: grey;
+}
+
+.dropdown-content a:link, .dropdown-content a:visited {
+    background-color: #bb9457;
+}
+
+.dropdown-content a:hover {
+    background-color:#99582aff;  
+}
+
+.dropdown-content a:active {
+    background-color: grey;
+}
+
+.dropdown-content a.currentLink {
+    background-color:#6f1d1bff;
+}
+/*Header ends*/
+
+/*Content starts*/
+#content {
+    width: 100%;
+    min-height: 80vh;
+    display: grid;
+    grid-row-gap: 2vh;
+    justify-items: center;
+    align-items: center;
+    margin-top: 1vh;
+}
+
+#main-title {
+    width: 100%;
+    min-height: 40vh;
+    background: url(../images/backgroundimage-pizza-2.jpg);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+#main-title h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin: 0.5em 0 0.5em 1em;
+}
+
+#main-title p {
+    width: 70%;
+    font-size: 1rem;
+    font-family: cursive;
+    color: white;
+    margin: 0 0 0 1.5em;
+    
+}
+
+#main-title a {
+    width: 70vw;
+    display: block;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-stretch: normal;
+    text-decoration: none;
+    text-align: center;
+    margin: 1em 2em 0 1.8em;
+}
+
+#main-title a:link, #main-tilte a:visited {
+    color: white;
+    background-color: #99582aff;
+    padding: 0.3em 0.6em 0.3em 0.6em;
+}
+    
+#main-title a:hover, #main-title a:active {
+    width: 45vw;
+    color: #99582aff;
+    background-color: white;
+    padding: 0.1em 0.2em 0.1em 0.2em;
+    font-size: 0.8rem;
+}
+
+/*Top-content starts*/
+#top-content {
+    width: 90%;
+    min-height: 80vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.top-image img {
+    width: auto;
+    max-width: 90%;
+    height: 40vh;
+    border-radius: 2em;
+}
+
+.top-text {
+    margin: 0.3em 0 1em 0.5em;
+    line-height: 4vh;
+}
+
+.top-text h2 {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6f1d1bff;
+    text-align: center;
+}
+
+.top-text p {
+    font-size: 1rem;
+    font-family: cursive;
+    margin: 0.3em 1em 0.6em 0;
+    color: #99582aff;
+    text-align: left;
+}
+/*Top-container ends*/
+
+/*Sub-content starts*/
+.sub-content {
+    width: 100%;
+    background: url(../images/backgroundimage-pizza-8.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+#sub-content {
+    width: 100%;
+    min-height: 50vh;
+    display: grid;
+    grid-template-rows: 40% 60%;
+    justify-items: center;
+    align-items: center;
+}
+
+#menu-order a {
+    width: 40vw;
+    display: block;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-stretch: normal;
+    text-decoration: none;
+    text-align: center;
+    margin: 0.3em 2em 0.6em 2em;
+}
+
+#menu-order a:link, #menu-order a:visited {
+    color: white;
+    border: 3px solid #bb9457ff;
+    padding: 0.2em;
+}
+    
+#menu-order a:hover, #menu-order a:active {
+    color: #bb9457ff;
+    border: 2px solid #99582aff;
+    padding: 0.2em;
+}
+
+#video iframe {
+    width: 100%;
+    margin: 0.3em 1em 0.3em 0;
+}
+/*Sub-content ends*/
+
+/*Bottom-content starts*/
+#bottom-content {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    column-gap: 1vw;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    align-content: center;
+}
+
+.cropped {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.bottom-text {
+    width: 90%;
+}
+
+.bottom-text h2{
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6f1d1bff;
+    margin: 0.6em 0.6em 0.6em 0.6em;
+}
+
+.bottom-text p {
+    text-align: left;
+    font-size: 1rem;
+    font-family: cursive;
+    color: #99582aff;
+    margin: 0.6em 0.6em 0.6em 0.6em;
+}
+
+/*Footer starts*/
+#footer {
+    background-color: #6f1d1bff;
+    width: 100%;
+    height: 8vh;
+    font-size: 1rem;
+    font-family: cursive;
+    color: white;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+} 
+/*Footer ends*/
+
+
+@media only screen and (min-width: 600px) {
+    #header {
+        grid-template-columns: 15vw auto 30vw;
+        row-gap: 0.2vh;
+        justify-items: center;
+        align-items: center; 
+    }
+    
+    .logo {
+        width: 8vw;
+        display: block;
+    }
+    
+    .dropbtn {
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+    }
+
+    #main-title {
+        min-height: 30vh;
+    }
+    
+    #main-title h1 {
+        margin-left: 1.1em;
+    }
+    
+    #main-title p {
+        text-align: center;
+        margin: 0.5em 0 0 0;
+    }
+    
+    #main-title a {
+        width: 40vw;
+        font-size: 1rem;
+        margin: 1em 2em 0 1.6em;
+    }
+    
+    #main-title a:hover, #main-title a:active {
+        width: 35vw;
+        padding: 0.4em 0.7em 0.4em 0.7em;
+        font-size: 1.2rem;
+    }
+
+    #top-content {
+        width: 100%;
+        min-height: 70vh;
+        grid-template-rows: 50% 50%;
+    }
+    
+    .top-image img {
+        width: auto;
+        max-width: 100%;
+        height: 50vh;
+        border-radius: 2em;
+    }
+    
+    .top-text {
+        margin: 0.3em 0 1.5em 0.3em;
+        text-align: center;
+    }
+    
+    .top-text p {
+        margin: 0.3em 1em 0.6em 1em;
+    }
+    
+    #menu-order a {
+        width: 25vw;
+        font-size: 1rem;
+    }
+
+    .bottom-text {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: top;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    #header {
+        display: grid;
+        grid-template-columns: 20% auto 0 40%;
+        height: 15vh;
+        row-gap: 0.2vh;
+        justify-items: center;
+        align-items: center; 
+    }
+
+    .logo {
+        width: 5vw;
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: none;
+    }
+
+    .dropbtn {
+        display: none;
+    }
+
+    .desktop-menu {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .desktop-content {
+        display: grid;
+        width: 100%;
+        height: 50%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 0.5vw;
+        box-shadow: none;
+        justify-items: center;
+        align-items: center;
+        box-shadow: none;
+    }
+
+    .desktop-content a {
+        display: block;
+        width: 100%;
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-stretch: normal;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        padding: 0.5em 0.9em 0.5em 0.9em;
+    }
+
+    .dropdown-menu:hover .dropdown-content {
+        display: none;
+    }
+
+    .dropdown-menu:hover .dropbtn {
+        display: none;
+    }
+
+    .desktop-content a:link, .desktop-content a:visited {
+        background-color: #bb9457;
+    }
+    
+    .desktop-content a:hover {
+        background-color:#99582aff;  
+    }
+    
+    .desktop-content a:active {
+        background-color: grey;
+    }
+    
+    .desktop-content a.currentLink {
+        background-color:#6f1d1bff;
+    }
+    
+
+
+
+    #content {
+        width: 100%;
+        min-height: 77vh;
+        display: grid;
+        grid-row-gap: 2.5vh;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    #main-title {
+        min-height: 45vh;
+        align-items: center;
+    }
+
+    #main-title h1 {
+        font-size: 2rem;
+        margin: 0.1em 0 0.1em 1em;
+    }
+    
+    #main-title p {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 0.1em;
+        padding-left: 0.9em;
+    }
+    
+    #main-title a {
+        width: 40vw;
+        font-size: 1.6rem;
+    }
+
+    #top-content {
+        width: 100%;
+        min-height: 60vh;
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: 100% 0%;
+    }
+    
+    .top-image img {
+        margin: 0.3em 0 0.3em 1.5em;
+        border-radius: 2em;
+    }
+    
+    .top-text {
+        margin: 0.3rem 0 0.3rem 0.3rem;
+    }
+    
+    .top-text h2 {
+        text-align: center;
+        margin: 0.3em auto 0.3em auto;
+    }
+    
+    .top-text p {
+        text-align: left;
+        font-size: 1.1rem;
+        margin: 0.3em 1em 0.3em 1em;
+    }
+
+    #sub-content {
+        min-height: 50vh;
+        display: grid;
+        grid-template-columns: auto 30% 40%;
+        grid-template-rows: 100% 0;
+        column-gap: 1vw;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #menu-order a {
+        width: 40vw;
+        font-size: 2rem;
+    }
+    
+    #video iframe {
+        width: 150%;
+        height: 150%;
+    }
+    
+    #bottom-content {
+        width: 100%;
+        row-gap: 0.5vh;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .bottom-text h2{
+        margin: 0 0.6em 0 0.6em;
+    }
+    
+    .bottom-text p {
+        margin: 0 0.6em 0 0.6em;
+    }
+}
+    
+
